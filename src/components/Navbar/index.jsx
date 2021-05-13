@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className="row align-items-center space-between text-center p-3">
             <div className="col-md-2">
-                <Link className="navbar-brand mx-1 link" to="/">My Agency Web</Link>
+                <Link className="navbar-brand mx-1 link" to="/">My Web Agency</Link>
             </div>
 
             <div className="col-md-3">
