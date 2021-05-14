@@ -7,18 +7,16 @@ import Navwork from 'components/Navwork'
 
 const Works = () => {
     return (
-        <Router>
-            <div className="py-4 align-items-center justify-content-center ">
-                <h5 className="py-2 text-center">{deleteMarkDown(pageContent.works.title)}</h5>
-                <p className="text-center">{pageContent.works.paragraph}</p>
-                <Navwork />
-                <Switch>
-                    <Route path="/works/:workSlug">
-                        <Projects />
-                    </Route>
-                </Switch>
-            </div>
-        </Router>
+        <div className="py-4 align-items-center justify-content-center ">
+            <h5 className="py-2 text-center">{deleteMarkDown(pageContent.works.title)}</h5>
+            <p className="text-center">{pageContent.works.paragraph}</p>
+            <Navwork />
+            <Switch>
+                <Route path="/works/:workSlug">
+                    <Projects />
+                </Route>
+            </Switch>
+        </div>
     )
 }
 
